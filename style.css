@@ -1,0 +1,1227 @@
+:root {
+  font-size: 16px;
+  --font-size: 16px;
+  --primary: #4d5053;
+  --title-color: #292f36;
+  --bg-color: #f4f0ec;
+  --accent-color: #cda274;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.bkcolor {
+  background-color: #f4f0ec;
+}
+.button {
+  cursor: pointer;
+}
+/* 超連結->icon */
+span.material-symbols-outlined {
+  margin-left: 0.3125rem;
+  color: #cda274;
+}
+.menuOpen {
+  display: block;
+}
+
+/* 全域設定 */
+/* 頁首導覽列 */
+.header {
+  margin: 2.75rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo .title {
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+.logoImg-title {
+  display: flex;
+  align-items: center;
+}
+.nav-list-button {
+  display: none;
+  position: relative;
+}
+.nav {
+  width: 35%;
+}
+.nav > .nav-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav > .nav-list a {
+  color: #292f36;
+  font-size: 1.375rem;
+}
+.search-item {
+  border-radius: 20px;
+  border-color: #292f36;
+  display: none;
+}
+.searchButton {
+  background-color: white;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 24px;
+  text-align: center;
+  color: #292f36;
+}
+
+body {
+  margin: auto;
+}
+/* banner區塊 */
+.banner {
+  width: 100%;
+  height: 65.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./6ff1405bc9c6eff15df865f0cd6c8544.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 47%;
+  border-bottom-left-radius: 18.1875rem;
+}
+/* 直接用一個div包住banner-content，把banner做flex將該div水平垂直置中，這樣在裡面的banner-content就會不管在視窗大小多少時就可以位於同一位置(因為寬度單位都設定為%)。 */
+.banner-contaiber {
+  width: 80%;
+}
+
+.banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner-title {
+  font-size: 5.3125rem;
+  font-weight: 400;
+  font-family: "DM Serif Display";
+  line-height: 6.6406rem;
+  color: #292f36;
+}
+.banner .description {
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  color: #292f36;
+}
+.banner-button {
+  box-shadow: 0rem 0.625rem 1.25rem rgba(192, 192, 192, 35%);
+  border-radius: 1.125rem;
+  background-color: #292f36;
+  padding: 1.625rem 3rem 1.625rem 3rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  margin-top: 0.625rem;
+}
+.banner-button > div {
+  letter-spacing: 0.0625rem;
+}
+
+/* 服務項目 */
+.work {
+  width: 60%;
+  margin: 12.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.work-content {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work .title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.9531rem;
+  color: #292f36;
+}
+
+.work .description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+  margin-top: 1.25rem;
+}
+
+.work a {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 22.5px;
+  letter-spacing: 0.0625rem;
+  color: #4d5053;
+}
+
+.work .link {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+/* 關於我們 */
+.About-Us {
+  width: 65%;
+  margin: 12.5rem auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+.About-Us > .About-us-content {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+}
+
+.About-Us .title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.9063rem;
+  letter-spacing: 0.0625rem;
+  color: #292f36;
+  text-align: start;
+}
+.About-Us .content {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  text-align: start;
+  color: #4d5053;
+  margin-top: 2.5rem;
+}
+
+.About-Us .sub-button {
+  margin-top: 3.125rem;
+}
+
+.About-Us .call {
+  display: flex;
+  align-items: center;
+}
+
+.About-Us .call-icon {
+  width: 5.8125rem;
+  height: 5.8125rem;
+  background-color: #f4f0ec;
+  border-radius: 50%;
+}
+
+.About-Us .call-icon > i {
+  font-size: 2rem;
+  position: relative;
+  left: 1.875rem;
+  top: 1.875rem;
+  color: #cda274;
+}
+
+.About-Us .call-text {
+  margin-left: 2.5rem;
+}
+
+.About-Us .call-number {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+.About-Us .call-number-content {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+
+.About-Us button {
+  box-shadow: 0rem 0.625rem 1.25rem rgba(192, 192, 192, 35%);
+  border-radius: 1.125rem;
+  background-color: #292f36;
+  padding: 1.625rem 1.9375rem 1.625rem 1.9375rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  margin-top: 0.625rem;
+  letter-spacing: 0.0625rem;
+  margin-top: 3.75rem;
+}
+
+.About-us-Image {
+  width: 55%;
+  height: 43.75rem;
+  background-image: url(./about-us.png);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 0rem 20.4063rem 0rem 7.6875rem;
+}
+
+/* 消費者評價 */
+.Testimonial {
+  width: 65%;
+  margin: 12.5rem auto;
+}
+.Testimonial > .content {
+  background-color: #f4f0ec;
+  border-radius: 3.125rem;
+  width: 95%;
+  margin: auto;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Testimonial .title {
+  width: 34.1875rem;
+  height: 7.875rem;
+  color: #292f36;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  letter-spacing: 0.0625rem;
+}
+
+.Testimonial .Testimonial-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.875rem;
+}
+.Testimonial .Testimonial-content > .Testimonial-item {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 1.25rem;
+  background-color: white;
+  border-radius: 1.25rem;
+}
+
+.Testimonial-item-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Testimonial-item-person {
+  display: flex;
+  justify-content: start;
+  height: 80px;
+}
+.Testimonial-item-person > .img {
+  height: 4.8125rem;
+  flex: 0 0 4.8125rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.headshots1 {
+  background-image: url(./Headshots1.png);
+  background-position: 65% 25%;
+  background-size: 280%;
+}
+.headshots2 {
+  background-image: url(./Headshots2.png);
+  background-position: 85% 10%;
+  background-size: 400%;
+}
+.headshots3 {
+  background-image: url(./Headshots3.png);
+  background-position: 83% 5%;
+  background-size: 400%;
+}
+.Testimonial-item-person > .text {
+  margin-left: 1.25rem;
+}
+.Testimonial-item-person .name {
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 2.3438rem;
+  letter-spacing: 0.0313rem;
+  font-family: "DM Serif Display";
+  color: #292f36;
+}
+.Testimonial-item-person .address {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+
+.Testimonial-item-content > .description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+/* 合作品牌logo */
+.client-logo {
+  width: 50%;
+  margin: 12.5rem auto;
+}
+.client-logo-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-logo-list li {
+  max-width: 9.375rem;
+}
+.client-logo-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 服務案件 */
+.project {
+  width: 60%;
+  margin: 12.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project > .heading {
+  width: 70%;
+  text-align: center;
+}
+
+.project > .heading > .title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.9063rem;
+  letter-spacing: 0.0625rem;
+  color: #292f36;
+}
+
+.project > .heading > .description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+
+.project-total {
+  width: 100%;
+  margin-top: 3.125rem;
+}
+
+.project1-content,
+.project2-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project2-content {
+  margin-top: 2.5rem;
+}
+
+.project-content1 {
+  width: 45%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.project-content-img1,
+.project-content-img2,
+.project-content-img3,
+.project-content-img4 {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-content-img1 {
+  border-top-right-radius: 50px;
+  aspect-ratio: 1/1;
+}
+.project-content-img2 {
+  border-top-left-radius: 50px;
+  aspect-ratio: 1/1;
+}
+.project-content-img3 {
+  border-bottom-right-radius: 50px;
+  aspect-ratio: 1/1;
+}
+.project-content-img4 {
+  border-bottom-left-radius: 50px;
+  aspect-ratio: 1/1;
+}
+.project-content-img1 img {
+  width: 100%;
+  height: auto;
+}
+.project-content-img2 img {
+  width: 100%;
+  height: auto;
+}
+.project-content-img3 img {
+  width: 100%;
+  height: auto;
+}
+.project-content-img4 img {
+  width: 100%;
+  height: auto;
+}
+.project-content-description {
+  width: 100%;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-content-description
+  > .project-content-description-text
+  > div:first-child {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.9531rem;
+  letter-spacing: 0.0625rem;
+  color: #292f36;
+}
+
+.project-content-description
+  > .project-content-description-text
+  > div:last-child {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+.project1-content > .project-content1:last-child {
+  margin-right: 0;
+}
+.project2-content > .project-content1:last-child {
+  margin-right: 0;
+}
+
+.project-content-description > a {
+  width: 4.375rem;
+  height: 4.375rem;
+  font-size: 1.875rem;
+  text-align: center;
+  line-height: 4.375rem;
+  color: #292f36;
+}
+
+/* 案件數區塊 */
+.counter {
+  width: 100%;
+  margin: 12.5rem auto;
+}
+
+.counter > ul {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.counter > ul > li {
+  width: 25%;
+  border-right: 0.0625rem solid #cda274;
+  text-align: center;
+}
+.counter > ul > li:last-child {
+  border: none;
+}
+
+.counter .number {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 5.3125rem;
+  line-height: 6.6406rem;
+  letter-spacing: 0.0625rem;
+  color: #cda274;
+}
+.counter .description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+
+/* blog區塊 */
+.blog {
+  width: 70%;
+  margin: 12.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog > .heading {
+  width: 74%;
+}
+.blog > .heading > .title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.9063rem;
+  letter-spacing: 0.0625rem;
+  color: #292f36;
+  text-align: center;
+}
+.blog > .heading > .description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+  text-align: center;
+}
+.blog-sub-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.875rem;
+}
+.blog-sub-content > .border {
+  border: 0.0625rem solid #e7e7e7;
+  border-radius: 10%;
+  width: 32%;
+}
+.blog-sub-content-item {
+  margin: 0.9375rem;
+  position: relative;
+}
+.blog-sub-content .img1,
+.img2,
+.img3 {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  aspect-ratio: 16/14;
+}
+
+.blog-sub-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10% 10% 0 0;
+  object-fit: cover;
+}
+
+.blog-sub-content .tag {
+  width: 8.0625rem;
+  height: 2.5625rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  text-align: center;
+  line-height: 2.5625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+.blog-sub-content .content-description {
+  width: 100%;
+  margin-top: 0.625rem;
+}
+.blog-sub-content .content-description > .title {
+  width: 90%;
+  height: 50px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.9531rem;
+  letter-spacing: 0.0625rem;
+  color: #292f36;
+}
+.blog-sub-content .content-description > .date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.125rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0313rem;
+  color: #4d5053;
+}
+
+.blog-sub-content-item a {
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: #f4f0ec;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 3.25rem;
+  color: #292f36;
+  border-radius: 50%;
+}
+
+/* 聯繫我們 */
+.contact-us {
+  width: 60%;
+  margin: 12.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #292f36;
+  border-radius: 1.875rem;
+}
+.contact-us > .contact-item {
+  width: 100%;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us .title {
+  width: 35.5625rem;
+  height: 3.9375rem;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.9063rem;
+  letter-spacing: 0.0625rem;
+  color: white;
+}
+.contact-us .description {
+  margin: auto;
+  width: 28.25rem;
+  height: 2.0625rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0313rem;
+  color: white;
+}
+
+.contact-us .contact-button {
+  box-shadow: 0rem 0.625rem 1.25rem #1f2022;
+  border-radius: 1.125rem;
+  background-color: #cda274;
+  padding: 1.625rem 2.3125rem 1.625rem 2.3125rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  margin-top: 1.875rem;
+}
+
+footer {
+  width: 100%;
+  margin: 12.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > .interno {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9.375rem;
+}
+
+footer > .interno > .interno-content {
+  width: 35%;
+}
+footer > .interno > .interno-contact {
+  width: 18%;
+}
+.interno-content-item > li {
+  display: flex;
+  align-items: center;
+}
+.interno-content-item > li > .title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  color: #292f36;
+}
+
+.interno-content-item > .description {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+  margin-top: 1.25rem;
+}
+.interno-content-icon-list {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.875rem;
+}
+
+.interno-page > .Pages a {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 4.125rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+
+.title-style {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.9531rem;
+  color: #292f36;
+}
+
+.interno-services > .Services a {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 4.125rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+
+.interno-contact > .contact > .text {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.375rem;
+  margin-top: 1rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+.interno-contact > .contact > .text > p {
+  line-height: 2.0625rem;
+}
+.copyright {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  margin-top: 1.875rem;
+  letter-spacing: 0.0125rem;
+  color: #4d5053;
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    font-size: 16px;
+  }
+  .About-Us {
+    width: 75%;
+  }
+}
+
+/* 電腦版樣式 */
+@media screen and (min-width: 1025px) and (max-width: 1499px) {
+  :root {
+    font-size: 12px;
+  }
+  .nav {
+    width: 45%;
+  }
+  .banner-title {
+    line-height: 6.25rem;
+  }
+  .banner .description {
+    margin: 20px 0;
+  }
+
+  .Testimonial {
+    width: 70%;
+  }
+  .client-logo {
+    width: 70%;
+  }
+
+  .client-logo-list li {
+    max-width: 100%;
+  }
+  .project {
+    width: 70%;
+  }
+  .About-Us {
+    width: 75%;
+  }
+}
+
+/* 平板樣式 */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    font-size: 12px;
+  }
+  .banner {
+    height: 62.5rem;
+  }
+  .nav {
+    width: 50%;
+  }
+
+  .nav > .nav-list a {
+    font-size: 1.375rem;
+  }
+  .banner-title {
+    line-height: 5rem;
+  }
+  .banner .description {
+    margin: 1.25rem 0;
+  }
+
+  .About-Us {
+    width: 85%;
+  }
+  .About-Us .content {
+    margin-top: 1.875rem;
+  }
+  .About-Us .title {
+    line-height: 3.125rem;
+  }
+  .About-Us button {
+    margin-top: 1.375rem;
+  }
+
+  .counter > ul {
+    width: 70%;
+  }
+
+  .Testimonial {
+    width: 80%;
+  }
+
+  .blog {
+    width: 80%;
+  }
+  .Testimonial-item-person > .img {
+    aspect-ratio: 1/1;
+  }
+  .client-logo {
+    width: 80%;
+  }
+  .client-logo-list li {
+    width: 100%;
+  }
+  .client-logo-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project {
+    width: 80%;
+  }
+  .blog {
+    width: 90%;
+  }
+}
+
+/* 手機樣式 */
+@media screen and (max-width: 767px) {
+  :root {
+    font-size: 12px;
+  }
+  .header {
+    width: 90%;
+    margin: 20px auto;
+    justify-content: space-between;
+  }
+  .nav-list-button {
+    display: block;
+  }
+  .header {
+    display: inline;
+    margin-top: 10px;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logoImg-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-list > li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+    box-sizing: content-box;
+    padding: 10px 0;
+  }
+  .nav-list > li:first-child {
+    border-top: 1.5px solid black;
+  }
+
+  .searchNavlist {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .search-item {
+    display: flex;
+    align-items: center;
+  }
+  .searchInput {
+    display: inline;
+    margin-right: 3px;
+    width: 80px;
+    height: 25px;
+    border-radius: 1.25rem;
+  }
+  .nav-list-button {
+    font-size: 1.5625rem;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .searchButton {
+    font-size: 20px;
+  }
+  .search-item {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav {
+    display: none;
+  }
+  .search2 {
+    display: none;
+  }
+  .banner {
+    height: 840px;
+    border-radius: 0;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner-button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .work {
+    flex-wrap: nowrap;
+    width: 80%;
+    flex-direction: column;
+    margin: 12.5rem auto;
+  }
+  .work-content {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .work .link {
+    margin-top: 15px;
+  }
+  .About-Us {
+    width: 90%;
+    flex-direction: column;
+  }
+  .About-Us > .About-us-content {
+    width: 100%;
+  }
+  .About-Us .title {
+    text-align: center;
+  }
+  .About-Us .content {
+    text-align: center;
+  }
+  .call {
+    justify-content: center;
+  }
+  .About-Us button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 3.125rem auto;
+  }
+  .About-us-Image {
+    width: 100%;
+    height: auto;
+    border-radius: 0rem 3.125rem 0rem 3.125rem;
+    aspect-ratio: 1/1;
+  }
+  .Testimonial {
+    width: 90%;
+  }
+  .Testimonial .title {
+    width: 100%;
+  }
+  .Testimonial-content {
+    margin-top: 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Testimonial .Testimonial-content > .Testimonial-item {
+    width: 90%;
+  }
+  .Testimonial > .content {
+    padding: 20px 0;
+  }
+  .client-logo {
+    width: 90%;
+  }
+  .client-logo-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    width: 90%;
+  }
+  .project1-content,
+  .project2-content {
+    flex-direction: column;
+  }
+  .project-content1 {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  .project-total {
+    margin-top: 0;
+  }
+  .project2-content {
+    margin-top: 0;
+  }
+  .counter > ul {
+    width: 90%;
+  }
+  .counter .number {
+    font-size: 3.75rem;
+  }
+  .counter .description {
+    font-size: 14px;
+  }
+  .blog {
+    width: 90%;
+  }
+  .blog-sub-content {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .blog-sub-content > .border {
+    width: 100%;
+  }
+  .blog-sub-content > .border {
+    margin-top: 30px;
+  }
+  .contact-us {
+    width: 90%;
+  }
+  .contact-us .title {
+    width: fit-content;
+    font-size: 22px;
+    text-align: center;
+  }
+  .contact-us .description {
+    font-size: 1rem;
+    width: fit-content;
+  }
+  .contact-us .contact-button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  footer > .interno {
+    width: 95%;
+  }
+  .interno-content-item > li > .title {
+    font-size: 1.375rem;
+  }
+  footer > .interno > .interno-content {
+    width: 25%;
+  }
+  .interno-content-icon-list {
+    width: 80%;
+  }
+  .interno-content-icon-list {
+    font-size: 0.9375rem;
+  }
+  .interno-contact > .contact > .text {
+    word-break: break-all;
+  }
+  footer > .interno > .interno-contact {
+    width: 25%;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+  }
+}
